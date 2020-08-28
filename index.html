@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="ytf-8">
+  <title>welcome</title>
+  <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <div class="d-img">
-        <div class="content">
+<div class="container">
+<div class="navbar">
+<div class="logo">
+  <img src="Vote.png">
+</div>
+<nav id="menu">
+  <ul>
+    <li><a href="admin.html">ADMIN</a></li>
+    <li><a href="home.html">PARTY REGISTRATION</a></li>
+    <li><a href="vault.html">USER LOGIN</a></li>
+  </ul>
+  <p class="lite-text">MENU</p>
+  <img src="close.png" class="close-icon" onclick="closemenu()">
+</nav>
+<img src="menuu.png" class="menu-icon" onclick="openmenu()">
+</div>
+<div class="content-row">
+  <div class="left-col">
+    <div class="search">
+      <img src="search.png" alt="">
+      <input type="text">
+    </div>
+     <br><br>
+    <h1>MADHAAN SURAKSITH</h1>
+    <h3>Have A Vision? Make The Right Decision!</h3>
+    <p>Leadership is not about the next election,it's about the NEXT Generation.</p>
 
-                         
-                            <h1>Madhaan <span>Suraksith</span></h1><br><br>
-                           <a href="admin.html" class="btn btn" ><h2>ADMIN</h2> </a><br>
-                           <a href="home.html" class="btn btn" ><h2>PARTIES REGISTRATION</h2> </a><br>
-                           <a href="vault.html" class="btn btn" ><h2>USER LOGIN</h2> </a><br>
+<div class="indicator">
+  <span class="active"></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+<div class="right-col">
+  <img src="pic1.png" alt="">
+</div>
+</div>
+<div class="social-media">
+                  <a href="facebooklogin.php" class="social-icon">
+                      <i class="fab fa-facebook-f" style="font-size:20px;color:#040dbf;"></i>
+                  </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter" style="font-size:20px;color:#0479e0;"></i>
+              </a>
+              <a href="googlelogin.php"  class="social-icon">
+                <i class="fab fa-google-plus" aria-hidden="true" style="font-size:25px;color:#bf0404;"></i>
+              </a>
+            </div>
+<script>
+  var menu = document.getElementById("menu");
+  function closemenu(){
+    menu.style.top ="-100vh";
 
-                         </div>
-                    </div>
-
+  }
+  function openmenu(){
+    menu.style.top ="0";
+    
+  }
+</script>
 </body>
-
 </html>
+
+
+
