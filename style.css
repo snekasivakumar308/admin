@@ -94,8 +94,8 @@ p{
 }
 .social-media{
 	position: absolute;
-	right: 30px;
-	top: 50%;
+	right: 63px;
+	top: 60%;
 	transform: translateY(-50%);
 }
 .social-icon {
@@ -175,5 +175,4 @@ nav{
 .menu-icon{
 	width: 45px;
 	cursor: pointer;
-	margin: 0 35px;
 }
