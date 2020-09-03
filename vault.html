@@ -9,30 +9,25 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
       .headerFont{
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 24px;
       }
 
       .subFont{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 14px;
         
       }
       
       .specialHead{
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Poppins', sans-serif;
       }
 
       .normalFont{
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Poppins', sans-serif;
       }
     </style>
 
@@ -84,35 +79,15 @@
           
           <form action="saveVote.php" method="POST">
           <div class="form-group">
-            <label>Voter's Name :</label><br>
+            <label>Adhaar's Name :</label><br>
             
             <input type="text" name="voterName" pattern="[A-Za-z]{6,}" title="Enter Your Full Name" placeholder="Enter Your Full Name" class="form-control" required/><br>
 
-            <label>Voter's Registered Email ID :</label><br>
+            <label>Adhaar's Registered Email ID :</label><br>
             <input type="text" name="voterEmail" placeholder="Enter Your Email ID" class="form-control"/><br>
 
-            <label>Voter's Card No. :</label><br>
+            <label>Adhaar's Card No. :</label><br>
             <input id="id1" type="text" name="voterID" pattern="[0-9].{6,}" placeholder="Enter Your Voter Uniquie ID" class="form-control" required/><br>
-            
-            <h3 class="normalFont">Selet Any One of Them,</h3>
-            <div class="radio">
-              <label for="">
-                <input type="radio" name="selectedCandidate" value="BJP"> <strong>Bhartiya Janta Party (BJP)</strong>
-              </label><br>
-
-              <label for="">
-                <input type="radio" name="selectedCandidate" value="INC"> <strong>Congress (INC)</strong> 
-              </label><br>
-              
-              <label for="">
-                <input type="radio" name="selectedCandidate" value="AAP"> <strong>YSR Congress (YSRCP)</strong>
-              </label><br>
-
-              <label for="">
-                <input type="radio" name="selectedCandidate" value="TMC"> <strong>JanaSena (JNS)</strong>
-              </label><br>
-              <br>
-              <hr>
               <button type="submit" name="submit" class="btn btn-primary"><strong>Submit</strong></button>
               <button type="submit" class="btn btn-default">Decline</button>
             </div>
